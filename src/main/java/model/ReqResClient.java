@@ -26,12 +26,4 @@ public class ReqResClient {
         getSingleUserResponse.setStatusCode(response.getStatusCode());
         return getSingleUserResponse;
     }
-
-    public static void main(String[] args) {
-        Faker faker = new Faker();
-        CreateUserResponse user = new ReqResClient().createUser("test", "dev");
-        System.out.println(user.getName());
-//        GetSingleUserResponse user = new ReqResClient().getUser("3");
-//        System.out.println(user.getData().getAvatar());
-    }
 }

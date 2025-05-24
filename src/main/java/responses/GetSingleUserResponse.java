@@ -1,7 +1,6 @@
 package responses;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.google.gson.annotations.SerializedName;
 import core.BaseResponse;
 import lombok.Getter;
 import lombok.Setter;
