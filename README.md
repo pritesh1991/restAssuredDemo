@@ -5,7 +5,7 @@
 ![TestNG](https://img.shields.io/badge/TestNG-7.10.0-red)
 ![Gradle](https://img.shields.io/badge/Gradle-8.5-blue)
 
-A skeleton project demonstrating API test automation using RestAssured framework with Java and TestNG. This repository provides a production-ready template for REST API testing, API automation, and integration testing.
+A skeleton project demonstrating API test automation using RestAssured framework with Java and TestNG. This repository provides a production-ready template for REST API testing, integration testing, and continuous delivery workflows.
 
 ## Table of Contents
 
@@ -219,10 +219,6 @@ public class YourEndpoint implements IServiceEndpoint {
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
-
-## Keywords
-
-API Testing, REST API, RestAssured, Java Testing Framework, TestNG, API Automation, Integration Testing, HTTP Testing, API Test Framework, Test Automation, Continuous Integration, CI/CD Testing, Gradle, JSON Testing
 
 ## License
 
