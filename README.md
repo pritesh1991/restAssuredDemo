@@ -1,22 +1,40 @@
 # RestAssured API Testing Framework
 
-A skeleton project demonstrating API test automation using RestAssured framework with Java and TestNG.
+![Java](https://img.shields.io/badge/Java-11%2B-orange)
+![RestAssured](https://img.shields.io/badge/RestAssured-5.4.0-green)
+![TestNG](https://img.shields.io/badge/TestNG-7.10.0-red)
+![Gradle](https://img.shields.io/badge/Gradle-8.5-blue)
+
+A skeleton project demonstrating API test automation using RestAssured framework with Java and TestNG. This repository provides a production-ready template for REST API testing, API automation, and integration testing.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Project Structure](#project-structure)
+- [Architecture](#architecture)
+- [Getting Started](#getting-started)
+- [Dependencies](#dependencies)
+- [Usage Examples](#usage-examples)
+- [Extending the Framework](#extending-the-framework)
+- [Contributing](#contributing)
 
 ## Overview
 
-This is a lightweight, modular API testing framework built with RestAssured that demonstrates best practices for API test automation. The project uses the [ReqRes](https://reqres.in) API as a sample target for demonstration purposes.
+This is a lightweight, modular API testing framework built with RestAssured that demonstrates best practices for REST API test automation, HTTP testing, and API integration testing. The project uses the [ReqRes](https://reqres.in) API as a sample target for demonstration purposes, making it ideal for learning API automation, functional testing, and continuous integration testing.
 
 ## Features
 
-- ✅ Modular architecture with separation of concerns
-- ✅ RestAssured for API testing
-- ✅ TestNG for test execution and data-driven testing
-- ✅ Jackson and Gson for JSON serialization/deserialization
-- ✅ Lombok for reducing boilerplate code
-- ✅ JavaFaker for test data generation
-- ✅ Properties-based configuration
-- ✅ Custom request handler for HTTP methods
-- ✅ POJO-based request and response models
+- ✅ **Modular Architecture**: Clean separation of concerns with layered design
+- ✅ **RestAssured Integration**: Powerful REST API testing capabilities
+- ✅ **TestNG Framework**: Advanced test execution, parallel testing, and data-driven testing
+- ✅ **JSON Support**: Jackson and Gson for JSON parsing and serialization
+- ✅ **Lombok Integration**: Reduced boilerplate code with annotations
+- ✅ **Test Data Generation**: JavaFaker for dynamic test data
+- ✅ **Configuration Management**: Properties-based configuration for multiple environments
+- ✅ **HTTP Methods Support**: GET, POST, PUT, PATCH, DELETE operations
+- ✅ **POJO Models**: Type-safe request and response handling
 
 ## Prerequisites
 
@@ -65,13 +83,13 @@ restAssuredDemo/
 
 ## Architecture
 
-The framework follows a layered architecture:
+The framework follows a clean, maintainable layered architecture pattern for API test automation:
 
-1. **Core Layer**: Contains the foundation classes like `RequestHandler` and `IServiceEndpoint` interface
-2. **Endpoint Layer**: Implements specific API endpoints with URL, method, headers, and body
-3. **Model Layer**: Client classes that orchestrate API calls
-4. **Request/Response Layer**: POJO classes for API requests and responses
-5. **Test Layer**: TestNG test classes with data providers
+1. **Core Layer**: Foundation classes including `RequestHandler` for HTTP operations and `IServiceEndpoint` interface for endpoint contracts
+2. **Endpoint Layer**: API endpoint implementations with URL mapping, HTTP methods, headers, and request bodies
+3. **Model Layer**: Client classes (ReqResClient) that orchestrate API calls and handle responses
+4. **Request/Response Layer**: POJO models for type-safe API request and response handling
+5. **Test Layer**: TestNG test suites with data providers for parameterized testing
 
 ### Key Components
 
@@ -117,12 +135,14 @@ Execute tests with detailed output:
 
 ## Dependencies
 
-- **RestAssured 5.4.0**: API testing framework
-- **TestNG 7.10.0**: Testing framework
-- **Lombok 1.18.32**: Reduces boilerplate code
-- **Jackson 2.17.0**: JSON processing
-- **Gson 2.10.1**: JSON serialization/deserialization
-- **JavaFaker 1.0.2**: Test data generation
+This REST API testing framework uses the following technologies:
+
+- **RestAssured 5.4.0**: Industry-standard REST API testing library for Java
+- **TestNG 7.10.0**: Powerful testing framework with advanced features
+- **Lombok 1.18.32**: Annotation processor to reduce Java boilerplate
+- **Jackson 2.17.0**: High-performance JSON processor
+- **Gson 2.10.1**: Google's JSON serialization library
+- **JavaFaker 1.0.2**: Fake data generator for realistic test data
 
 ## Usage Examples
 
@@ -200,16 +220,20 @@ public class YourEndpoint implements IServiceEndpoint {
 4. Push to the branch
 5. Create a Pull Request
 
+## Keywords
+
+API Testing, REST API, RestAssured, Java Testing Framework, TestNG, API Automation, Integration Testing, HTTP Testing, API Test Framework, Test Automation, Continuous Integration, CI/CD Testing, Gradle, JSON Testing
+
 ## License
 
 This project is open source and available for educational purposes.
 
 ## Author
 
-Pritesh Patel
+**Pritesh Patel** - [GitHub Profile](https://github.com/pritesh1991)
 
 ## Acknowledgments
 
-- [RestAssured](https://rest-assured.io/) - API testing framework
-- [ReqRes](https://reqres.in) - Free API for testing
-- [TestNG](https://testng.org/) - Testing framework
+- [RestAssured](https://rest-assured.io/) - Leading REST API testing framework for Java
+- [ReqRes](https://reqres.in) - Free hosted REST API for testing and prototyping
+- [TestNG](https://testng.org/) - Testing framework inspired by JUnit and NUnit
